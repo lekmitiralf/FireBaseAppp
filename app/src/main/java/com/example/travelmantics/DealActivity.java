@@ -151,7 +151,9 @@ public class DealActivity extends AppCompatActivity {
                      taskSnapshot.getMetadata().getReference().getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                         @Override
                         public void onSuccess(Uri uri) {
-                            deal.setImageUrl(uri.toString());
+                            final String downloadUrl =
+                                    uri.toString();
+                            deal.setImageUrl(downloadUrl);
                         }
                     });
 
