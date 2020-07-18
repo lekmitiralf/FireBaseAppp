@@ -86,7 +86,7 @@ public class ListActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        showMenu();
+       // showMenu();
         switch (item.getItemId()){
             case R.id.insert_menu:
                 Intent intent = new Intent(this, DealActivity.class);
